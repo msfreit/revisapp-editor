@@ -1,6 +1,12 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { getUsers } from "../utils/users";
 
 function Home() {
+useEffect(() => {
+    getUsers();
+},[])
+
+
   return (
     <div>
       <h1>Home</h1>
@@ -33,4 +39,6 @@ function Teste() {
       </div>
   )
 }
+
+
 export default Home;
