@@ -1,4 +1,4 @@
-import { firestore } from "./firebase";
+import { firestore } from "../firebase";
 
 const getUsers = async(props) => {
     const snapshot = await firestore.collection("users").get();
