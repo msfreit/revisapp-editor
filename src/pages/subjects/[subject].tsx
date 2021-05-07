@@ -25,7 +25,7 @@ interface PostProps {
 }
 
 export default function Subjects({ post }: PostProps) {
-    const [text, setText] = useState('')
+    const [text, setText] = useState(post.content)
 
     console.log(post)
 
